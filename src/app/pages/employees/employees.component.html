@@ -1,0 +1,41 @@
+<!-- Begin page content -->
+<main role="main" class="flex-shrink-0">
+  <div class="container">
+
+    <h1 class="mt-5 mb-5">List of All Employees</h1>
+
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th></th>
+        <th></th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees">
+          <td>{{ employee.id }}</td>
+          <td>{{ employee.name }}</td>
+          <td>{{ employee.email }}</td>
+          <td>{{ employee.phone }}</td>
+          <td>
+            <button [routerLink]="['employee/edit', employee.id]">
+              <div class="fa fa-edit text-primary"></div>
+            </button>
+          </td>
+          <td>
+            <button (click)="onDelete(employee.id)">
+              <div class="fa fa-trash text-danger"></div>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</main>
+
+
+
+
