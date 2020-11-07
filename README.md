@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ```bash
 # clone the repo
-git clone https://github.com/sanjay3722/spacex.git
+git clone https://github.com/sanjay3722/omnirio.git
 
 # change directory
 cd spacex
