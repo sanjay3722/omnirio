@@ -2,9 +2,22 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
-## install the repo with npm
+## Quick start
 
+```bash
+# clone the repo
+git clone https://github.com/sanjay3722/spacex.git
+
+# change directory
+cd spacex
+
+# install the repo with npm
 npm install
+
+# start the server
+ng serve -o
+
+```
 
 ## Development server
 
